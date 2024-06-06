@@ -1,0 +1,36 @@
+﻿@model proyectofp.Models.Jugador
+
+<h1>Editar Jugador</h1>
+<form asp-action="Editar" method="post">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input asp-for="Nombre" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label>Goles</label>
+        <input asp-for="Goles" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Asistencias</label>
+        <input asp-for="Asistencias" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Tarjetas Amarillas</label>
+        <input asp-for="TarjetasAmarillas" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Tarjetas Rojas</label>
+        <input asp-for="TarjetasRojas" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Posición</label>
+        <input asp-for="Posicion" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Equipo Actual</label>
+        <input asp-for="EquipoActual" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+

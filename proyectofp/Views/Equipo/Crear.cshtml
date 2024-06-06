@@ -1,0 +1,24 @@
+﻿@model proyectofp.Models.Equipo
+
+<h1>Crear Nuevo Equipo</h1>
+<form asp-action="Crear" method="post">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>País</label>
+        <input asp-for="Pais" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Entrenador</label>
+        <input asp-for="Entrenador" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Fundación</label>
+        <input asp-for="Fundacion" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+

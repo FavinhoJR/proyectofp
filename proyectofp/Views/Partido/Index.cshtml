@@ -1,0 +1,36 @@
+﻿@model IEnumerable<proyectofp.Models.Partido>
+
+<h1>Partidos</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Sede</th>
+            <th>Equipo Local</th>
+            <th>Equipo Visitante</th>
+            <th>Marcador Local</th>
+            <th>Marcador Visitante</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var partido in Model)
+        {
+            <tr>
+                <td>@partido.Fecha</td>
+                <td>@partido.Sede</td>
+                <td>@partido.EquipoLocal.Nombre</td>
+                <td>@partido.EquipoVisitante.Nombre</td>
+                <td>@partido.MarcadorLocal</td>
+                <td>@partido.MarcadorVisitante</td>
+                <td>
+                    <a href="/Partido/Editar?key=@partido.Fecha-@partido.EquipoLocal.Nombre-@partido.EquipoVisitante.Nombre">Editar</a> |
+                    <a href="/Partido/Eliminar?key=@partido.Fecha-@partido.EquipoLocal.Nombre-@partido.EquipoVisitante.Nombre">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Partido/Crear" class="btn btn-primary">Agregar Nuevo Partido</a>
+
+

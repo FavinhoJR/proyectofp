@@ -1,0 +1,38 @@
+﻿@model IEnumerable<proyectofp.Models.Jugador>
+
+<h1>Jugadores</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Goles</th>
+            <th>Asistencias</th>
+            <th>Tarjetas Amarillas</th>
+            <th>Tarjetas Rojas</th>
+            <th>Posición</th>
+            <th>Equipo Actual</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var jugador in Model)
+        {
+            <tr>
+                <td>@jugador.Nombre</td>
+                <td>@jugador.Goles</td>
+                <td>@jugador.Asistencias</td>
+                <td>@jugador.TarjetasAmarillas</td>
+                <td>@jugador.TarjetasRojas</td>
+                <td>@jugador.Posicion</td>
+                <td>@jugador.EquipoActual</td>
+                <td>
+                    <a href="/Jugador/Editar?nombre=@jugador.Nombre">Editar</a> |
+                    <a href="/Jugador/Eliminar?nombre=@jugador.Nombre">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Jugador/Crear" class="btn btn-primary">Agregar Nuevo Jugador</a>
+
+

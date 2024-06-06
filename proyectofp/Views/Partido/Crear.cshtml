@@ -1,0 +1,35 @@
+﻿@model proyectofp.Models.Partido
+
+<h1>Crear Nuevo Partido</h1>
+<form asp-action="Crear" method="post">
+    <div class="form-group">
+        <label>Fecha</label>
+        <input asp-for="Fecha" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Sede</label>
+        <input asp-for="Sede" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Equipo Local</label>
+        <input asp-for="EquipoLocal.Nombre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Equipo Visitante</label>
+        <input asp-for="EquipoVisitante.Nombre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Marcador Local</label>
+        <input asp-for="MarcadorLocal" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Marcador Visitante</label>
+        <input asp-for="MarcadorVisitante" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Árbitro</label>
+        <input asp-for="Arbitro" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
