@@ -1,4 +1,4 @@
-# Proyecto de Gestión de Estadísticas de un Campeonato de Fútbol (
+# Proyecto de Gestión de Estadísticas de un Campeonato de Fútbol (Proyecto Favio U)
 
 ## Descripción del Proyecto
 
