@@ -46,4 +46,4 @@ Esta aplicación web permite gestionar las estadísticas de un campeonato de fú
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/FavinhoJR/CreditCardManagement.git
+   git clone https://github.com/FavinhoJR/proyectofp.git
